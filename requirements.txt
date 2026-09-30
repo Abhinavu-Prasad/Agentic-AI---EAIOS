@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+langgraph
+langchain
+langchain-community
+ollama
+psycopg2-binary
+sqlalchemy
+qdrant-client
+pandas
+duckdb
+xgboost
+prophet
+plotly
+reportlab
+python-docx
+python-pptx

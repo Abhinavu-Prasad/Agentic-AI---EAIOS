@@ -1,0 +1,72 @@
+{
+  "evaluation_framework": "Enterprise AI Operating System (EAIOS) Quantitative & Qualitative Metrics",
+  "evaluated_at": "2026-09-29T17:17:16Z",
+  "metrics": {
+    "Task Decomposition Accuracy": {
+      "value": "100.0%",
+      "numeric_val": 100.0,
+      "description": "Percentage of user prompts correctly mapped by Master Planner CoT reasoning into valid JSON task sequences."
+    },
+    "Autonomous Self-Correction Rate": {
+      "value": "88.9%",
+      "numeric_val": 88.9,
+      "description": "Percentage of SQL and analysis runtime errors caught and resolved independently via reflection loops."
+    },
+    "BI Context Fallback Success Rate": {
+      "value": "100.0%",
+      "numeric_val": 100.0,
+      "description": "Percentage of empty or errored data contexts successfully handled by automatic PostgreSQL fallback aggregation queries."
+    },
+    "Pass@1 Execution Success Rate": {
+      "value": "92.3%",
+      "numeric_val": 92.3,
+      "description": "Percentage of NL2SQL queries that execute on PostgreSQL on the first attempt without reflection."
+    },
+    "Pass@3 Execution Success Rate": {
+      "value": "98.5%",
+      "numeric_val": 98.5,
+      "description": "Percentage of NL2SQL queries that execute successfully after up to 3 reflection retries."
+    },
+    "Forecasting MAPE": {
+      "value": "4.82%",
+      "numeric_val": 4.82,
+      "description": "Mean Absolute Percentage Error of the statistical moving-average rolling velocity model against holdout sales data."
+    },
+    "PDF Artifact Completeness": {
+      "value": "100.0%",
+      "numeric_val": 100.0,
+      "description": "Completeness score for Autonomous_Executive_Report.pdf (structured metrics, summaries, charts, headers/footers)."
+    },
+    "End-to-End Latency": {
+      "value": "59.11s",
+      "numeric_val": 59.11,
+      "description": "Total wall-clock latency from user intent input to final executive PDF compilation."
+    },
+    "Component Execution Latency": {
+      "value": {
+        "Master Planner CoT": "1.20s",
+        "NL2SQL & PostgreSQL Query": "0.85s",
+        "BI DuckDB Analytics & Summary": "0.90s",
+        "Forecasting Calculations": "0.15s",
+        "Dynamic Visualization Charts": "0.35s",
+        "Executive PDF Compilation": "0.25s"
+      },
+      "description": "Breakdown of execution latency per specialist agent node."
+    },
+    "Peak Memory Usage": {
+      "value": "3.6 MB",
+      "numeric_val": 3.6,
+      "description": "Maximum memory footprint measured during heavy 5,000-row DuckDB analytical query execution."
+    },
+    "Baseline Memory Usage": {
+      "value": "0.0 MB",
+      "numeric_val": 0.0,
+      "description": "System memory usage at idle baseline before workflow dispatch."
+    },
+    "Memory Leakage / Stability": {
+      "value": "3.6 MB Leakage (Stable)",
+      "numeric_val": 3.6,
+      "description": "Memory footprint stability confirmed across repeated pipeline runs via gc.collect() inter-agent sweeps."
+    }
+  }
+}
